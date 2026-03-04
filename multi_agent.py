@@ -370,7 +370,33 @@ def main_loop():
                 print(s)
                 print("-----")
         except Exception as e:
-            print(f"Error during execution: {e}")
+            print(f"Error during execution: {e}") 
 
-if __name__ == "__main__":
-    main_loop() 
+
+
+
+
+
+# import pdfplumber
+# import fitz  # PyMuPDF
+# import pandas as pd
+
+# def extract_text_from_pdf(pdf_path):
+#     doc = fitz.open(pdf_path)
+#     text = ""
+#     for page in doc:
+#         text += page.get_text("text") + "\n"
+#     return text.strip()
+
+# def extract_tables_from_pdf(pdf_path):
+#     tables_data = []
+#     with pdfplumber.open(pdf_path) as pdf:
+#         for page in pdf.pages:
+#             tables = page.extract_tables()
+#             for table in tables:
+#                 df = pd.DataFrame(table)  # Convert to DataFrame
+#                 tables_data.append(df.to_dict(orient="records"))  # Convert to list of dicts
+#     return tables_data
+
+# if __name__ == "__main__":
+#     main_loop() 
